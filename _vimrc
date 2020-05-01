@@ -39,6 +39,12 @@ set mouse=a
 "<cr>代表空格键
 :ab always always@(posedge clk or negedge rst_n) begin<Enter>if(!rst_n)begin<Enter>end <Enter>else begin <Enter>end<Enter>end
 :ab module module();<Enter><Enter>end
+
+"Plug插件
+call plug#begin('C:\Program Files (x86)\Vim\vim82\plugin')
+Plug 'Valloric/YouCompleteMe'
+call plug#end()
+
 behave mswin
 
 " Use the internal diff if available.
